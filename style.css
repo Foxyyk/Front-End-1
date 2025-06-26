@@ -37,6 +37,10 @@ a:visited {
   display: flex;
 }
 
+.info-text {
+  margin-left: 40px;
+}
+
 @media (max-width: 600px) {
   .info {
     text-align: center;
@@ -46,10 +50,6 @@ a:visited {
   .info-text {
     margin-left: 0;
   }
-}
-
-.info-text {
-  margin-left: 40px;
 }
 
 .info-text h4 {
