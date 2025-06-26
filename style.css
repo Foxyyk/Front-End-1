@@ -43,11 +43,15 @@ a:visited {
     display: block;
     margin: auto;
   }
+
+  .info-text {
+    margin-left: 0;
+  }
 }
 
-/* .info-text {
+.info-text {
   margin-left: 40px;
-} */
+}
 
 .info-text h4 {
   margin-bottom: 10px;
