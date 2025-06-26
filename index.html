@@ -4,82 +4,109 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Andrii Vagner CV</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <table cellspacing="15">
-      <tr>
-        <td>
-          <img src="avatar.jpg" alt="Andrii Vagner CV" width="150" />
-        </td>
-        <td>
+    <div class="container">
+      <div class="info">
+        <img src="avatar.jpg" alt="Andrii Vagner CV" class="avatar" />
+        <div class="info-text">
           <h1>Andrii Vagner</h1>
-          <p><em>Jestem Studentem 3 roku Uniwersytetu Zielonogórskiego</em></p>
-          <p><strong>Kierunku Biznes Elektroniczny</strong></p>
-        </td>
-      </tr>
-    </table>
-    <hr />
+          <p>Jestem Studentem 3 roku Uniwersytetu Zielonogórskiego</p>
+          <p>Kierunku Biznes Elektroniczny</p>
+          <h4>Moje Media Społeczkościowe</h4>
 
-    <h2>Moje Media Społeczkościowe</h2>
-    <ul>
-      <li><a href="https://www.instagram.com/andrii.vagner/">Instagram</a></li>
-      <li><a href="https://github.com/Foxyyk">GitHub</a></li>
-    </ul>
-    <hr />
+          <a href="https://www.instagram.com/andrii.vagner/" target="_blank"
+            >Instagram</a
+          >
+          |
+          <a href="https://github.com/Foxyyk" target="_blank">GitHub</a>
+        </div>
+      </div>
 
-    <h2>Moje Hobby</h2>
-    <ol type="I">
-      <li>Siatkówka</li>
-      <li>Front-End</li>
-      <li>Siłownia</li>
-      <li>Dota 2</li>
-    </ol>
-    <hr />
+      <div class="card bg-yellow">
+        <h2>Moje Hobby</h2>
+        <ol class="list">
+          <li>Siatkówka</li>
+          <li>Front-End</li>
+          <li>Siłownia</li>
+          <li>Dota 2</li>
+        </ol>
+      </div>
 
-    <h2>Doświadczenie</h2>
-    <table cellspacing="3" border="1">
-      <tr>
-        <th>Firma</th>
-        <th>Stanowisko</th>
-        <th>Rok pracy</th>
-      </tr>
-      <tr>
-        <td>StreamSoft</td>
-        <td>Front-End Developer</td>
-        <td>2022 - 2023</td>
-      </tr>
-      <tr>
-        <td>CodeBlock</td>
-        <td>Java Developer</td>
-        <td>2023 - 2024</td>
-      </tr>
-      <tr>
-        <td>DTP</td>
-        <td>DevOps</td>
-        <td>2024-2025</td>
-      </tr>
-    </table>
+      <div class="card bg-green">
+        <h2>Doświadczenie</h2>
+        <table class="table">
+          <tr>
+            <td>StreamSoft</td>
+            <td>Front-End Developer</td>
+            <td>2022 - 2023</td>
+          </tr>
+          <tr>
+            <td>CodeBlock</td>
+            <td>Java Developer</td>
+            <td>2023 - 2024</td>
+          </tr>
+          <tr>
+            <td>DTP</td>
+            <td>DevOps</td>
+            <td>2024-2025</td>
+          </tr>
+          <tr>
+            <td>4System</td>
+            <td>Dolboeb</td>
+            <td>Wsehda</td>
+          </tr>
+        </table>
+      </div>
 
-    <hr />
-    <h2>Dodatkowe Linki</h2>
-    <a href="page.html">Przejdź do strony z linkami!!!</a>
+      <div class="card bg-red">
+        <h2>Wideo na YouTube</h2>
+        <ul class="link-list">
+          <li>
+            <a href="https://www.youtube.com/watch?v=ihz9AtXIVfg"
+              >Zobacz wideo</a
+            >
+          </li>
+          <li>
+            <a href="https://www.youtube.com/watch?v=SpCUuyZZTp8&t=4608s"
+              >Kurs CSS Vladilen Minin</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="contact">
+        <form action="/">
+          <div class="row">
+            <div class="form-group">
+              <label for="name">Name: </label>
+              <input type="text" id="name" placeholder="Write your name..." />
+            </div>
 
-    <hr />
-    <form action="/">
-      <label for="email">Email: </label>
-      <input type="email" placeholder="Write your email..." />
-      <br />
-      <label for="name">Name: </label>
-      <input type="text" id="name" placeholder="Write your name..." />
-      <br />
-      <label for="descriptions">Descriptions: </label>
-      <br />
-      <textarea
-        id="descriptions"
-        placeholder="Write your descriptions..."
-        cols="27"
-        rows="6"
-      ></textarea>
-    </form>
+            <div class="form-group">
+              <label for="email">Email: </label>
+              <input type="email" placeholder="Write your email..." />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="descriptions">Descriptions: </label>
+            <textarea
+              id="descriptions"
+              placeholder="Write your descriptions..."
+              cols="15"
+              rows="2"
+            ></textarea>
+          </div>
+
+          <input type="submit" value="Wyślij" class="btn" />
+        </form>
+      </div>
+
+      <div class="position">
+        <div class="box"></div>
+      </div>
+    </div>
+    <div style="margin-bottom: 500px"></div>
   </body>
 </html>
